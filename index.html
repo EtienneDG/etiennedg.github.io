@@ -1,0 +1,166 @@
+---
+title: Etienne DG
+description: A small space on the web made of tiny pieces of code
+career_start: 2012
+---
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{{ page.title }}</title>
+        <meta name="description" content="{{ page.description }}" />
+        <link rel="stylesheet" href="/style.css" />
+        <meta name="viewport" content="width=device-width,initial-scale=0.0" />
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" href="/logo.svg" type="image/svg+xml" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="logo">
+                <img src="/logo.svg" alt="Etienne DG logo" />
+            </div>
+            <div class="welcome">
+                <h1>
+                    <span class="large">Hi.</span>
+                    I'm Etienne.
+                </h1>
+            </div>
+            <div class="content">
+                <p>
+                    I have been coding professionally for the past {{ site.time | date: '%Y'| int | minus:
+                    page.career_start}} years. My interest is primarily in bringing value to the users with tailored
+                    solutions. I like simple and clean code.
+                    <p>I am currently learning Golang.</p>
+                </p>
+                <h2>I currently work at</h2>
+                <div class="row">
+                    <h3>→ <span class="company">Privateaser / Joy</span></h3>
+                    <p>where I have been a <span class="position">Senior Software Engineer</span></p>
+                    <p>since <span class="start">2018</span>.</p>
+                    <p class="bold">I work on</p>
+                    <ul>
+                        <li>maintaining a large audience marketplace, for which response time and SEO greatly matter</li>
+                        <li>expanding an hybrid mobile app, using bleeding edge Angular and FastAPI</li>
+                        <li>contributing to everything in between (CI, automations, workers, infra)</li>
+                    </ul>
+                    <p class="bold">What I'm proud of</p>
+                    <ul>
+                        <li>going from a hobbyist python dev to the python lead</li>
+                        <li>training the team on python best practices</li>
+                        <li>
+                            various migrations that went smoothely
+                            <ul>
+                                <li>python2 → python3</li>
+                                <li>flask → fastapi</li>
+                                <li>multi → monorepo</li>
+                            </ul>
+                    </ul>
+                    <p class="icons">
+                        <span class="icon devicon-python-plain" title="Python"></span>
+                        <span class="icon devicon-typescript-plain" title="TypeScript"></span>
+                        <span>|</span>
+                        <span class="icon devicon-angular-plain" title="Angular"></span>
+                        <span class="icon devicon-vuejs-plain" title="Vue"></span>
+                        <span>|</span>
+                        <span class="icon devicon-mysql-plain" title="MySQL"></span>
+                        <span>|</span>
+                        <span class="icon devicon-amazonwebservices-plain" title="AWS"></span>
+                        <span class="icon devicon-github-plain" title="github"></span>
+                    </p>
+                </div>
+
+                <h2>I previously worked at</h2>
+                <div class="row">
+                    <h3>→ <span class="company">Goood</span></h3>
+                    <p>
+                        where I was an
+                        <span class="position">Experienced Software Engineer</span>
+                    </p>
+                    <p>from <span class="start">september 2016</span> to <span class="end">december 2017</span>.</p>
+                    <p class="bold">I worked on</p>
+                    <ul>
+                        <li>building a unique entry point for a client's intranet</li>
+                        <li>writing a custom CRM to replace dozens of spreadsheets</li>
+                        <li>having a great focus on quality and automated tests, TDD and test coverage mattered</li>
+                    </ul>
+                    <p class="bold">What I'm proud of</p>
+                    <ul>
+                        <li>aiming and achieving 0-bug releases <em>regularly</em></li>
+                        <li>proving to backend developers that Javascript frameworks were a viable solution</li>
+                    </ul>
+                    <p class="icons">
+                        <span class="icon devicon-csharp-plain" title="C#"></span>
+                        <span class="icon devicon-javascript-plain" title="Javascript"></span>
+                        <span>|</span>
+                        <span class="icon devicon-dotnetcore-plain" title=".net Core"></span>
+                        <span class="icon devicon-vuejs-plain" title="Vue"></span>
+                        <span>|</span>
+                        <span class="icon devicon-microsoftsqlserver-plain" title="SQL Server"></span>
+                        <span>|</span>
+                        <span class="icon devicon-azure-plain" title="Azure"></span>
+                        <span class="icon devicon-bitbucket-plain" title="Bitbucket"></span>
+                    </p>
+                    <h3>→ <span class="company">Amaris</span></h3>
+                    <p>
+                        where I was a
+                        <span class="position">Software Engineer</span>
+                    </p>
+                    <p>from <span class="start">september 2014</span> to <span class="end">august 2016</span>.</p>
+                    <p class="bold">I worked on</p>
+                    <ul>
+                        <li>building features for the application suite that composed the company's ERP</li>
+                        <li>managing a team of 4 intern developers</li>
+                    </ul>
+                    <p class="bold">What I'm proud of</p>
+                    <ul>
+                        <li>organizing a regular knowledge sharing session among the team, with lightning talks on our best practices and technologies</li>
+                        <li>rebuilding a critical reporting application using the Service-Repository pattern, increasing its maintainability and performance</li>
+                    </ul>
+                    <p class="icons">
+                        <span class="icon devicon-csharp-plain" title="C#"></span>
+                        <span class="icon devicon-javascript-plain" title="Javascript"></span>
+                        <span>|</span>
+                        <span class="icon devicon-jquery-plain" title="jQuery"></span>
+                        <span>|</span>
+                        <span class="icon devicon-microsoftsqlserver-plain" title="SQL Server"></span>
+                    </p>
+                    <h3>→ <span class="company">Capgemini</span></h3>
+                    <p>
+                        where I was an
+                        <span class="position">IT Consultant</span>
+                    </p>
+                    <p>from <span class="start">january 2012</span> to <span class="end">august 2014</span>.</p>
+                    <p class="bold">I worked on</p>
+                    <ul>
+                        <li>writing technical documentation as well a functional requirements</li>
+                        <li>mostly database oriented programming (PL/SQL)</li>
+                        <li>overseeing the deployment of our products on our client's infrastructure</li>
+                    </ul>
+                    <p class="bold">What I'm proud of</p>
+                    <ul>
+                        <li>
+                            going from a non tech role, mainly producing reports and quotations, to an Oracle and C#
+                            developer
+                        </li>
+                        <li>being the youngest team member to pitch a multi year project to a client</li>
+                    </ul>
+                    <p class="icons">
+                        <span class="icon devicon-csharp-plain" title="C#"></span>
+                        <span class="icon devicon-javascript-plain" title="Javascript"></span>
+                        <span>|</span>
+                        <span class="icon devicon-oracle-plain" title="Oracle"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footnotes">Copyright © {{ site.time | date: '%Y' }} Etienne DG.</div>
+    </body>
+</html>
