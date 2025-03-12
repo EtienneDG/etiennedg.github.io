@@ -7,12 +7,15 @@ $blue_green: #07bb9c;
 $lavender: #a06ab4;
 
 body {
-    background-color: #181818;
-    font-family: Hack, Helvetica, sans-serif;
-    color: #d5dce5;
-    display: flex;
+     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #252526;
+    font-family: Hack, Helvetica, sans-serif;
+    color: #d5dce5;
+    margin: 0; /* Remove default body margins */
+    // width: 100%;
+    // max-width: 100%;
 
     .logo {
         display: flex;
@@ -21,21 +24,31 @@ body {
         height: 200px;
     }
 
-    ul>li {
-        list-style: "- "
-    }
-
     .container {
-        
         display: flex;
         flex-direction: column;
-        height: 100%;
+        // height: 100%;
         align-content: center;
-        justify-content: space-between;
+        // justify-content: space-between;
         margin-bottom: 50px;
-        // min-width: 300px;
-        width: 75vw;
+        // width: 75vw;
         max-width: 800px;
+    }
+
+    @media screen and (max-width: 1000px) {
+        max-width: 600px;
+        width: 600px;
+    }
+
+    @media screen and (max-width: 1000px) {
+        max-width: 450px;
+        width: 450px;
+    }
+
+    .content {
+        p, ul:not(.nested) {
+            margin-left: 30px;
+        }
     }
 
     .bold {
@@ -47,12 +60,20 @@ body {
         margin-bottom: 15px;
     }
 
+    ul>li {
+        list-style: "- "
+    }
+
+    ul.nested>li {
+        list-style: initial;
+    }
+
     .row {
         padding-left: 15px;
     }
 
     .large {
-        font-size: 2em;
+        font-size: 50px;
     }
 
     .company {
@@ -76,7 +97,7 @@ body {
     }
 
     .icon {
-        font-size: 1.5em;
+        font-size: 15px;
     }
 
     .icons {
@@ -86,7 +107,7 @@ body {
     }
 
     .footnotes {
-        font-size: 0.75em;
+        font-size: 11px;
         display: flex;
         justify-content: center;
     }
